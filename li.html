@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>666</title>
+</head>
+<body onload="e1()">
+<strong>
+    <marquee behavior="" direction="">欢迎看我的个人名片</marquee>
+</strong>
+<section>
+    <div>
+        <img src="https://q2.qlogo.cn/headimg_dl?dst_uin=1819822504&amp;spec=100" alt="">
+        <h1>小李</h1>
+        <h3>已经20了</h3>
+        <p>明天又得要饭去了</p>
+        <br>
+        <a href="">搞笑男一枚</a>
+
+    </div>
+    <div>
+        <h2>本人爱好</h2>
+       <img src=" https://pic3.zhimg.com/100/v2-ecdd88e9bf3363559500e2b23e88f120_r.jpeg"width="50"height="50">
+   <a href="">吃饭</a>
+   <a href="">上班摸鱼</a>
+   <a href="">喜欢偷懒</a>
+   <a href="">网上当舔狗</a>
+   
+    </div>
+</section>
+<footer>
+    <p><a href="">@C2015 - 2023</a></p>
+</footer>
+</body>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    a{
+        text-decoration: none;
+        transition: color .3S;
+    }
+    a,img{
+        color: ghostwhite;
+    }
+    body{
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+        background-image: linear-gradient(125deg,pink,green,yellow,blue);
+        background-size: 400%;
+        font-family: "montserrat";
+        perspective: 500px;
+        animation: move 10S infinite;
+    }
+    @keyframes move{
+        0%{
+            background-position:0% 50%;
+        }
+        50%{
+            background-position: 100% 50%;
+        }
+        100%{
+            background-position: 0% 50%;
+        }
+
+    }
+    strong{
+       display: block; 
+       max-width: 340px;
+       margin: 50px auto 20px auto;
+       background-color: azure;
+       font-size: 1.2em;
+       border: 30px;
+       padding: 5px 0;
+       box-shadow: inset 2px 3px 5px 0 royalblue,inset -2px 2px 5px 0 royalblue;
+        border-radius: 40px;
+    }
+    strong marquee{
+        display: block;
+        width: 100%;
+        color: #055a6d;
+    }
+    section{
+        position: relative;
+        max-width: 340px;
+        height: 380px;
+        margin: 10px auto;
+        text-align: center;
+        transition: transform 1s;
+        transform-style: preserve-3d;
+    }
+    section:hover{
+      transform: rotateY(180deg)
+    }
+    section div{
+        position: absolute;
+        left:0;
+        top: 0;
+        width: 90%;
+        background-color: #fff;
+        padding: 10px 20px 40px ;
+        border-radius: 30px;
+        backface-visibility: hidden;
+    }
+    section div:first-child{
+        z-index: 1;
+    }
+    section div:last-child{
+        transform: rotateY(180deg);
+    }
+    section div:last-child a{
+        display: block;
+        margin: 10px auto;
+    }
+    section div:last-child h2{
+        font-size: 1.5em;
+        color: red;
+        margin: 15px auto;
+    }
+    section div img{
+        border-radius: 50%;
+        border: 1px solid black;
+        transition: all 1S;
+    }
+    section div img:hover{
+        transform: rotate(360deg);
+    }
+    section div h1,
+    section div h3,
+    section div p{
+        margin-top: 10px;
+    }
+    section div h1{
+        color:#ff9800;
+    }
+    section div h3{
+        font-size: 1.2em;
+        color: #d92215;
+    }
+    section div a{
+        box-shadow: border-box;
+        display: inline-block;
+        padding: 10px 20px;background-color: green;
+        border: 2px solid greenyellow;
+        color: #fff;
+        border-radius: 10px;
+        transition: all .5S;
+    }
+    section div a:hover{
+        border-color: #35b60e;
+    }
+    section div a:active{
+        background-color: #35b60e;
+    }
+    section div p{
+        color: limegreen;
+    }
+    footer{
+        text-align: center;
+        width: 100%;
+    }
+    footer p{
+        line-height: 1.8em;
+    }
+    footer p a{
+        border-bottom: 1px solid #fff;
+        font-weight: bold;
+    }
+    footer p a:hover{
+        color: #ffeb3b;
+    }
+</style>
+<script>
+    var text=document.title
+    var timerID
+    function e1(){
+        clearTimeout(timerID)
+        document.title=text.substring(1,text.length)+text.substring(0,1)
+        text=document.title.substring(0,text.length)
+        timerID=setTimeout("e1()",300)
+    };
+    src="https://fastly.jsdelivr.net/gh/huangwb8/bloghelper@latest/js/mobile-detect.js">
+</script>
+
+</html>
